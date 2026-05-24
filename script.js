@@ -1,6 +1,6 @@
 const output = document.getElementById("output");
 const loading = document.getElementById("loading");
-
+let button = document.getElementById('download-images-button');
 // Array of image URLs
 const images = [
   { url: "https://picsum.photos/id/237/200/300" },
@@ -60,4 +60,5 @@ function downloadImages() {
 }
 
 // Call function
-downloadImages();
+button.addEventListener('click', downloadImages);
+//downloadImages();
